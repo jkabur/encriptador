@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador-by-Kabur</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>Encriptador de Textos</h2>
+    </header>
+
+    <main>
+        <div class="input-container">
+            <textarea id="inputTexto" placeholder="Escribe el texto aquí..."></textarea>
+            <div class="button-container">
+                <button onclick="encriptarTexto()">Encriptar</button>
+                <button onclick="desencriptarTexto()">Desencriptar</button>
+            </div>
+        </div>
+
+        <div id="outputContainer">
+            <div id="no-text-message">
+                <p id="no-text-message-text">No hay texto para encriptar</p>
+                <img src="img/detective.jpg" alt="Un detective con una lupa mirando un signo de interrogación" id="placeholderImage">
+            </div>
+            <textarea id="outputTexto" placeholder="Texto encriptado o desencriptado..." readonly></textarea>
+            <button id="copiarBtn" onclick="copiarTexto()">Copiar</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Crenteraidober poberr Jufatain Imesgnaicimesober Kaibufatr - Aigoberstober 2024</p>
+    </footer>
+</body>
+</html>
